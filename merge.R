@@ -16,3 +16,5 @@ mergedData$StateCenter <- state.center
 mergedData$StateCenter
 state.center
 head(mergedData,3)
+
+view(mergedData)
