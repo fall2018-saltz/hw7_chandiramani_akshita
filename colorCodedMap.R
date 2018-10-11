@@ -3,7 +3,7 @@ library("ggplot2")
 library("ggmap")
 
 us <- map_data("state")
-head(us
+head(us)
 map.simple <- ggplot(mergedData, aes(map_id = StateName))  
 map.simple <- map.simple+  geom_map(map = us, fill="white", color="black") 
 #map.simple <- map.simple + expand_limits(x = us$lat, y = us$long)
