@@ -68,15 +68,15 @@
             "task_status": "in progress"
         },
         {
+            "name": "colormap.png"
+        },
+        {
             "assigned_to": "achandir",
             "desc": "",
             "name": "colorCodedMap.R",
             "task_status": "in progress"
-        },
-        {
-            "name": "colormap.png"
         }
     ],
-    "updated_at": "2018-10-11 15:59:20",
+    "updated_at": "2018-10-11 16:08:22",
     "url": "https://github.com/fall2018-saltz/hw7_chandiramani_akshita"
 }
