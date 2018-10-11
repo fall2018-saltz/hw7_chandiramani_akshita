@@ -10,5 +10,6 @@ colnames(mergedData)[1] <- "StateName"
 
 nrow(mergedData)
 
+head(mergedData)
 state.name
 
