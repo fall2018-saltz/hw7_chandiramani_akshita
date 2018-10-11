@@ -2,8 +2,8 @@
 library("ggplot2")
 library("ggmap")
 
-states_map <- map_data("usa")
-states_map
-  ggplot(mergedData, aes(map_id = "usa")) +
-    geom_map(aes(fill = StateArea), map = states_map) +
-    expand_limits(x = mergedData$StateCenterX, y = StateCenterX)
+
+ggplot(data = states) + 
+  geom_polygon(aes(x = long, y = lat, fill = region, group = group), color = "white") + 
+  coord_fixed(1.3) +
+  guides(fill=FALSE)
