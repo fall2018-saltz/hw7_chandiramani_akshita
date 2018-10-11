@@ -18,5 +18,5 @@ map.murderRate <- map.murderRate + expand_limits(x = us$long, y = us$lat)
 map.murderRate <- map.murderRate + coord_map() +  ggtitle("basic map of continental USA")
  
  
-map.murderRate <- map.murderRate + geom_point(x = -100, y = 40,
+map.murderRate <- map.murderRate + geom_point(x = mergedData$StateCenterX, y= mergedData$StateCenterY, y = 40,
 color="darkred")
