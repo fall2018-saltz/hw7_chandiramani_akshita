@@ -3,9 +3,9 @@ library("ggplot2")
 library("ggmap")
 
 
-
-head(mergedData)
-
-usa <- map_data("usa") # we already did this, but we can do it again
-map.popColor<-ggplot() + geom_polygon(data = usa, aes(x=long, y = lat, group = group)) + 
-  coord_fixed(1.3)
+us <- map_data("state")
+map.simple <- ggplot(mergedData, aes(map_id = StateName))  
+ map.simple <- map.simple+  geom_map(map = us, fill="white", color="black") 
+ map.simple <- map.simple + expand_limits(x = us$long, y = us$lat)
+ map.simple <- map.simple + coord_map() +  ggtitle("basic map of continental USA")
+ 
