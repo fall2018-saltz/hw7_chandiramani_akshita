@@ -88,8 +88,11 @@
         },
         {
             "name": "murderRate.png"
+        },
+        {
+            "name": "zoomed.png"
         }
     ],
-    "updated_at": "2018-10-11 21:02:00",
+    "updated_at": "2018-10-11 21:37:06",
     "url": "https://github.com/fall2018-saltz/hw7_chandiramani_akshita"
 }
