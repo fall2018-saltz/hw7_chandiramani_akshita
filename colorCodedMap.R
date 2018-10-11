@@ -3,7 +3,7 @@ library("ggplot2")
 library("ggmap")
 
 
-head(states)
+
 
 map.popColor <- ggplot(mergedData, aes(map_id = StateName))  
  map.popColor <- map.popColor + geom_map(map = us, aes(fill=july11pop)) 
