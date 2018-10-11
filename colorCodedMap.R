@@ -14,7 +14,7 @@ map.stateArea <- map.stateArea + coord_map() +  ggtitle("basic map of continenta
  
 map.murderRate <- ggplot(mergedData, aes(map_id = StateName))  
 map.murderRate <- map.murderRate+  geom_map(map = us, aes(color=mergedData$Murder, fill = mergedData$Murder)) 
-map.murderRate <- map.murderRate + expand_limits(x = us$long, y = us$lat)
+map.murderRate <- map.murderRate + expand_limits(x = mergedData$StateCenterX, y = mergedData$StateCenterY)
 map.murderRate <- map.murderRate + coord_map() +  ggtitle("basic map of continental USA")
  
  
