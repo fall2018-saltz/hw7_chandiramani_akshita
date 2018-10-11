@@ -13,5 +13,6 @@ mergedData$StateName <- state.name
 mergedData$StateArea <- state.area
 mergedData$StateCenter <- state.center
 
+mergedData$StateCenter
 state.center
 head(mergedData,3)
