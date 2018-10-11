@@ -6,8 +6,8 @@ us <- map_data("state")
 head(mergedData)
  mergedData$StateName <- tolower(mergedData$StateName)
  
-map.simple <- ggplot(mergedData, aes(map_id = StateName))  
-map.simple <- map.simple+  geom_map(map = us, color=mergedData$StateArea, fill = mergedData$StateArea) 
-map.simple <- map.simple + expand_limits(x = mergedData$StateCenterX, y = mergedData$StateCenterY)
-map.simple <- map.simple + coord_map() +  ggtitle("basic map of continental USA")
+map.stateArea <- ggplot(mergedData, aes(map_id = StateName))  
+map.stateArea <- map.stateArea+  geom_map(map = us, color=mergedData$StateArea, fill = mergedData$StateArea) 
+map.stateArea <- map.stateArea + expand_limits(x = mergedData$StateCenterX, y = mergedData$StateCenterY)
+map.stateArea <- map.stateArea + coord_map() +  ggtitle("basic map of continental USA")
  
