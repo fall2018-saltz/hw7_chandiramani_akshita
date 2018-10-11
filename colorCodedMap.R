@@ -27,3 +27,6 @@ map.Zoomed <- map.Zoomed + expand_limits(x = us$long, y = us$lat)
 map.Zoomed <- map.Zoomed + coord_map() +  ggtitle("basic map of continental USA")
 map.Zoomed <- map.Zoomed + geom_point(x = mergedData$StateCenterX, y= mergedData$StateCenterY, y = 40,
 color="white", aes(size = mergedData$population))
+
+map.Zoomed<-map.Zoomed +xlim(-64,-84)+ylim(30.71,50.71)
+
