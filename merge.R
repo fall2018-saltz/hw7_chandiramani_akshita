@@ -11,7 +11,7 @@ colnames(mergedData)[1] <- "StateName"
 mergedData <- mergedData[-c(9),]
 mergedData$StateName <- state.name
 mergedData$StateArea <- state.area
-mergedData$StateCenter <- state.center
+mergedData$StateCenterX <- state.center$x
 
 mergedData$StateCenter
 state.center
