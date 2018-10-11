@@ -2,7 +2,7 @@
 library("ggplot2")
 library("ggmap")
 
-
-usa <- map_data("usa") # we already did this, but we can do it again
-colormap <- ggplot(mergedData) +
-    geom_map(map = usa)
+states_map <- map_data("state")
+  ggplot(mergedData, aes(map_id = state)) +
+    geom_map(aes(fill = StateArea), map = states_map) +
+    expand_limits(x = states_map$long, y = states_map$lat)
