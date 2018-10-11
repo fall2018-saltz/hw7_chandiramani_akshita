@@ -19,4 +19,4 @@ map.murderRate <- map.murderRate + coord_map() +  ggtitle("basic map of continen
  
  
 map.murderRate + geom_point(aes(x = mergedData$StateCenterX, y = mergedData$StateCenterY, size = mergedData$population),
-color='white')
+color="darkred")
