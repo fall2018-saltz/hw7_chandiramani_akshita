@@ -4,7 +4,7 @@ library("ggmap")
 
 
 us <- map_data("state")
-us
+mergedData$StateName
 map.simple <- ggplot(mergedData, aes(map_id = StateName))  
 
 map.simple
