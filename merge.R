@@ -12,9 +12,5 @@ mergedData <- mergedData[-c(9),]
 mergedData$StateName <- state.name
 mergedData$StateArea <- state.area
 mergedData$StateCenterX <- state.center$x
+mergedData$StateCenterY <- state.center$y
 
-mergedData$StateCenter
-state.center
-head(mergedData$StateCenter,3)
-a<-state.center$x
-head(state.center,2)
