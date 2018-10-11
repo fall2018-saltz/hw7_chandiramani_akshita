@@ -17,3 +17,4 @@ mergedData$StateCenter
 state.center
 head(mergedData$StateCenter,3)
 state.center
+clear
