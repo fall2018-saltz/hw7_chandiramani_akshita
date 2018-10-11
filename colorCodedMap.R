@@ -5,4 +5,4 @@ library("ggmap")
 states_map <- map_data("usa")
   ggplot(mergedData, aes(map_id = "usa")) +
     geom_map(aes(fill = StateArea), map = states_map) +
-    expand_limits(x = states_map$long, y = states_map$lat)
+    expand_limits(x = StateCenterX, y = StateCenterX)
