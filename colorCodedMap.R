@@ -5,7 +5,7 @@ library("ggmap")
 
 
 
-map.popColor <- ggplot(mergedData, aes(map_id = StateName))  
+map.popColor <- ggplot(mergedData, aes(map_id = state))  
 us <- map_data("state")
  map.popColor <- map.popColor + geom_map(map = us, aes(fill=StateArea)) 
  
