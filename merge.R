@@ -15,5 +15,5 @@ mergedData$StateCenter <- state.center
 
 mergedData$StateCenter
 state.center
-head(mergedData$StateCenter,3)
+head(mergedData$StateArea,3)
 
