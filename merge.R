@@ -16,4 +16,4 @@ mergedData$StateCenter <- state.center
 mergedData$StateCenter
 state.center
 head(mergedData$StateArea,3)
-nrow(mergedData$StateCenter)
+nrow(mergedData)
