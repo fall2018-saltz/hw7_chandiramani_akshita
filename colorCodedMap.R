@@ -24,7 +24,7 @@ color="white", aes(size = mergedData$population))
 map.Zoomed <- ggplot(mergedData, aes(map_id = StateName))  
 map.Zoomed <- map.Zoomed+  geom_map(map = us, aes(color=mergedData$Murder, fill = mergedData$Murder)) 
 map.Zoomed <- map.Zoomed + expand_limits(x = us$long, y = us$lat)
-map.Zoomed <- map.Zoomed + coord_map(xlim = c(-64,-84),ylim = c(30.71,50.71)) +  ggtitle("Map of East USA")
+map.Zoomed <- map.Zoomed + coord_map(xlim = c(-64,-84),ylim = c(30.71,50.71)) +  ggtitle("Map of North East USA")
 map.Zoomed <- map.Zoomed + geom_point(x = mergedData$StateCenterX, y= mergedData$StateCenterY,
 color="white", aes(size = mergedData$population))
 
