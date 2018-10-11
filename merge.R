@@ -16,5 +16,5 @@ mergedData$StateCenter <- state.center
 mergedData$StateCenter
 state.center
 head(mergedData$StateCenter,3)
-state.center[x]
+state.center$x
 clear
