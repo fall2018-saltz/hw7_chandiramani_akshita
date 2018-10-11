@@ -9,5 +9,5 @@ mergedData <- mergedData[,-c(6)]
 colnames(mergedData)[1] <- "StateName"
 
 mergedData <- mergedData[-c(9),]
-state.name
+mergedData$StateName <- state.name
 
