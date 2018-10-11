@@ -10,4 +10,4 @@ colnames(mergedData)[1] <- "StateName"
 
 mergedData <- mergedData[-c(9),]
 mergedData$StateName <- state.name
-
+state.area
