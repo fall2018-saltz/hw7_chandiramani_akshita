@@ -17,4 +17,4 @@ mergedData$StateCenter
 state.center
 head(mergedData$StateCenter,3)
 a<-state.center$x
-a
+head(a,2)
