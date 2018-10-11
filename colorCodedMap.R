@@ -2,7 +2,7 @@
 library("ggplot2")
 library("ggmap")
 
-
+colnames(mergedData)
 us <- map_data("state")
 map.simple <- ggplot(mergedData, aes(map_id = StateName))  
 map.simple <- map.simple+  geom_map(map = us, fill="white", color="black") 
