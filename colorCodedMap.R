@@ -2,7 +2,7 @@
 library("ggplot2")
 library("ggmap")
 
-states <- map_data("mergedData")
+
 head(states)
 
 map.popColor <- ggplot(mergedData, aes(map_id = StateName))  
