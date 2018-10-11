@@ -14,5 +14,3 @@ mergedData$StateArea <- state.area
 mergedData$StateCenterX <- state.center$x
 mergedData$StateCenterY <- state.center$y
 
-head(mergedData)
-
