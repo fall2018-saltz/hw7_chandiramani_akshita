@@ -75,8 +75,11 @@
             "desc": "",
             "name": "colorCodedMap.R",
             "task_status": "in progress"
+        },
+        {
+            "name": "murderRate.png"
         }
     ],
-    "updated_at": "2018-10-11 20:56:16",
+    "updated_at": "2018-10-11 21:01:48",
     "url": "https://github.com/fall2018-saltz/hw7_chandiramani_akshita"
 }
