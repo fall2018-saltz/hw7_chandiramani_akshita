@@ -50,6 +50,16 @@
             ],
             "source": "colorCodedMap.R",
             "target": "stateArea.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "map.murderRate",
+                    "type": "png"
+                }
+            ],
+            "source": "colorCodedMap.R",
+            "target": "murderRate.png"
         }
     ],
     "nodes": [
@@ -80,6 +90,6 @@
             "name": "murderRate.png"
         }
     ],
-    "updated_at": "2018-10-11 21:01:48",
+    "updated_at": "2018-10-11 21:02:00",
     "url": "https://github.com/fall2018-saltz/hw7_chandiramani_akshita"
 }
