@@ -29,6 +29,17 @@
             ],
             "source": "clean.R",
             "target": "merge.R"
+        },
+        {
+            "ports": [
+                {
+                    "input": "mergedData",
+                    "output": "mergedData",
+                    "type": "r_obj"
+                }
+            ],
+            "source": "merge.R",
+            "target": "colorCodedMap.R"
         }
     ],
     "nodes": [
@@ -51,6 +62,6 @@
             "name": "colorCodedMap.R"
         }
     ],
-    "updated_at": "2018-10-11 15:55:29",
+    "updated_at": "2018-10-11 15:55:43",
     "url": "https://github.com/fall2018-saltz/hw7_chandiramani_akshita"
 }
