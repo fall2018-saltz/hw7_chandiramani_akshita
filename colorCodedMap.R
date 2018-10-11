@@ -8,6 +8,6 @@ head(mergedData)
  
 map.simple <- ggplot(mergedData, aes(map_id = StateName))  
 map.simple <- map.simple+  geom_map(map = us, fill=mergedData$StateArea, color="black") 
-map.simple <- map.simple + expand_limits(x = mergedData$StateCenterX, y = mergedData$StateCenterY)
+map.simple <- map.simple + expand_limits(x = 10+mergedData$StateCenterX, y = 10+mergedData$StateCenterY)
 map.simple <- map.simple + coord_map() +  ggtitle("basic map of continental USA")
  
