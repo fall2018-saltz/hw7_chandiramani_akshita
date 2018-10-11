@@ -15,7 +15,7 @@ map.stateArea <- map.stateArea + coord_map() +  ggtitle("Map of continental USA 
 map.murderRate <- ggplot(mergedData, aes(map_id = StateName))  
 map.murderRate <- map.murderRate+  geom_map(map = us, aes(color=mergedData$Murder, fill = mergedData$Murder)) 
 map.murderRate <- map.murderRate + expand_limits(x = us$long, y = us$lat)
-map.murderRate <- map.murderRate + coord_map() +  ggtitle("basic map of continental USA")
+map.murderRate <- map.murderRate + coord_map() +  ggtitle("Map of continental USA color coded by Murder")
  
  
 map.murderRate <- map.murderRate + geom_point(x = mergedData$StateCenterX, y= mergedData$StateCenterY,
@@ -24,7 +24,7 @@ color="white", aes(size = mergedData$population))
 map.Zoomed <- ggplot(mergedData, aes(map_id = StateName))  
 map.Zoomed <- map.Zoomed+  geom_map(map = us, aes(color=mergedData$Murder, fill = mergedData$Murder)) 
 map.Zoomed <- map.Zoomed + expand_limits(x = us$long, y = us$lat)
-map.Zoomed <- map.Zoomed + coord_map(xlim = c(-64,-84),ylim = c(30.71,50.71)) +  ggtitle("basic map of continental USA")
+map.Zoomed <- map.Zoomed + coord_map(xlim = c(-64,-84),ylim = c(30.71,50.71)) +  ggtitle("Map of East USA")
 map.Zoomed <- map.Zoomed + geom_point(x = mergedData$StateCenterX, y= mergedData$StateCenterY,
 color="white", aes(size = mergedData$population))
 
