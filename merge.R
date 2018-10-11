@@ -17,4 +17,4 @@ mergedData$StateCenter
 state.center
 head(mergedData,3)
 
-view(mergedData)
+View(mergedData)
