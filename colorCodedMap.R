@@ -24,6 +24,7 @@ map.murderRate <- map.murderRate + coord_map() +  ggtitle("Map of continental US
 #Show the population as a circle per state (the larger the population, the larger the circle)
 #using the location defined by the center of each state
 #Adding points on map with x and y coordinates as center of state, and setting size of points
+#using the population of the state
 map.murderRate <- map.murderRate + geom_point(x = mergedData$StateCenterX, y= mergedData$StateCenterY,
 color="white", aes(size = mergedData$population))
 
