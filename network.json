@@ -1,0 +1,108 @@
+{
+    "collaborators": [
+        "achandir"
+    ],
+    "created_at": "2018-10-11 15:33:29",
+    "edges": [
+        {
+            "ports": [
+                {
+                    "input": "raw_data",
+                    "type": "csv"
+                }
+            ],
+            "source": "scprc_est_2017_18_pop_res.csv",
+            "target": "clean.R"
+        },
+        {
+            "ports": [
+                {
+                    "input": "cleanDfStates",
+                    "output": "cleanDfStates",
+                    "type": "r_obj"
+                },
+                {
+                    "input": "arrests",
+                    "output": "arrests",
+                    "type": "r_obj"
+                }
+            ],
+            "source": "clean.R",
+            "target": "merge.R"
+        },
+        {
+            "ports": [
+                {
+                    "input": "mergedData",
+                    "output": "mergedData",
+                    "type": "r_obj"
+                }
+            ],
+            "source": "merge.R",
+            "target": "colorCodedMap.R"
+        },
+        {
+            "ports": [
+                {
+                    "output": "map.stateArea",
+                    "type": "png"
+                }
+            ],
+            "source": "colorCodedMap.R",
+            "target": "stateArea.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "map.murderRate",
+                    "type": "png"
+                }
+            ],
+            "source": "colorCodedMap.R",
+            "target": "murderRate.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "map.Zoomed",
+                    "type": "png"
+                }
+            ],
+            "source": "colorCodedMap.R",
+            "target": "zoomed.png"
+        }
+    ],
+    "nodes": [
+        {
+            "name": "scprc_est_2017_18_pop_res.csv"
+        },
+        {
+            "assigned_to": "achandir",
+            "name": "clean.R",
+            "task_status": "in progress"
+        },
+        {
+            "assigned_to": "achandir",
+            "desc": "",
+            "name": "merge.R",
+            "task_status": "in progress"
+        },
+        {
+            "name": "stateArea.png"
+        },
+        {
+            "assigned_to": "achandir",
+            "desc": "",
+            "name": "colorCodedMap.R",
+            "task_status": "in progress"
+        },
+        {
+            "name": "murderRate.png"
+        },
+        {
+            "name": "zoomed.png"
+        }
+    ],
+    "updated_at": "2018-10-11 21:37:14",
+    "url": "https://github.com/fall2018-saltz/hw7_chandiramani_akshita"
+}
