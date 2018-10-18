@@ -1,5 +1,5 @@
 
-#1)	Read in the census dataset (using the function created in HW 3)
+#1)	Read in the census dataset and the USArrests and merge them
 state.name
 CleanDataframe <- function(states)
 {
@@ -19,7 +19,6 @@ cleanDfStates <- CleanDataframe(raw_data)
 
 head(cleanDfStates)
 
-#2) Initializing arrests with USArrests data
 arrests <- USArrests
 rownames(cleanDfStates)
 head(cleanDfStates)
