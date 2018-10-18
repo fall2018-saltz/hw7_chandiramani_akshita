@@ -29,6 +29,7 @@ map.murderRate <- map.murderRate + geom_point(x = mergedData$StateCenterX, y= me
 color="white", aes(size = mergedData$population))
 
 #6)	Repeat step C, but only show the states in the north east
+#by applying xlim and ylim using coordiates of new york city and zooming in the map
 map.Zoomed <- ggplot(mergedData, aes(map_id = StateName))  
 map.Zoomed <- map.Zoomed+  geom_map(map = us, aes(color=mergedData$Murder, fill = mergedData$Murder)) 
 map.Zoomed <- map.Zoomed + expand_limits(x = us$long, y = us$lat)
