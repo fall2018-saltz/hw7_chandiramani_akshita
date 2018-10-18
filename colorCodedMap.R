@@ -15,6 +15,7 @@ map.stateArea <- map.stateArea + expand_limits(x = us$long, y = us$lat)
 map.stateArea <- map.stateArea + coord_map() +  ggtitle("Map of continental USA color coded by Area")
  
 #4)	Repeat step B, but color code the map based on the murder rate of each state.
+#the map is filled using Murder variable
 map.murderRate <- ggplot(mergedData, aes(map_id = StateName))  
 map.murderRate <- map.murderRate+  geom_map(map = us, aes(color=mergedData$Murder, fill = mergedData$Murder)) 
 map.murderRate <- map.murderRate + expand_limits(x = us$long, y = us$lat)
