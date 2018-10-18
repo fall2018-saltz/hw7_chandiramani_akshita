@@ -8,6 +8,7 @@ head(mergedData)
  mergedData$StateName <- tolower(mergedData$StateName)
  
 #3)	Create a color coded map, based on the area of the state 
+#the map is filled using StateArea variable
 map.stateArea <- ggplot(mergedData, aes(map_id = StateName))  
 map.stateArea <- map.stateArea+  geom_map(map = us, aes(fill = mergedData$StateArea, color=mergedData$StateArea)) 
 map.stateArea <- map.stateArea + expand_limits(x = us$long, y = us$lat)
