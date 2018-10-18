@@ -1,6 +1,6 @@
 
 
-#3) Merge arrests and US data based on row names
+#1)	Read in the census dataset and the USArrests and merge them
 mergedData <- merge(arrests, cleanDfStates, by="row.names", all=TRUE)
 
 #Remove additional States column from merged table
