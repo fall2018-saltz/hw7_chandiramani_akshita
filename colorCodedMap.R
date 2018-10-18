@@ -19,10 +19,12 @@ map.murderRate <- map.murderRate+  geom_map(map = us, aes(color=mergedData$Murde
 map.murderRate <- map.murderRate + expand_limits(x = us$long, y = us$lat)
 map.murderRate <- map.murderRate + coord_map() +  ggtitle("Map of continental USA color coded by Murder")
  
-#Show the population as a circle per state (the larger the population, the larger the circle), using the location defined by the center of each state
+#Show the population as a circle per state (the larger the population, the larger the circle)
+#using the location defined by the center of each state
 map.murderRate <- map.murderRate + geom_point(x = mergedData$StateCenterX, y= mergedData$StateCenterY,
 color="white", aes(size = mergedData$population))
 
+#6)	Repeat step C, but only show the states in the north east
 map.Zoomed <- ggplot(mergedData, aes(map_id = StateName))  
 map.Zoomed <- map.Zoomed+  geom_map(map = us, aes(color=mergedData$Murder, fill = mergedData$Murder)) 
 map.Zoomed <- map.Zoomed + expand_limits(x = us$long, y = us$lat)
